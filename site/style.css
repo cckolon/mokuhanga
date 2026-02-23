@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #1b1b1b;
+  background: #fff;
+}
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+}
+header {
+  margin-bottom: 32px;
+}
+h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+p {
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+a {
+  color: #1a5fb4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+figure {
+  margin: 2rem 0;
+}
+figure a {
+  display: block;
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.text-block {
+  margin: 1.5rem 0;
+}
+.text-block div {
+  margin: 0 0 0.8rem;
+}
+.text-block div:last-child {
+  margin-bottom: 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 2rem 0;
+}
+.gallery figure {
+  margin: 0;
+}
+.side-by-side {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+.side-by-side > * {
+  flex: 1;
+  min-width: 0;
+}
+.video-embed {
+  margin: 2rem 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.btn {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #1b1b1b;
+  color: #1b1b1b;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #1b1b1b;
+  color: #fff;
+  text-decoration: none;
+}
+.social-links {
+  margin: 1.5rem 0;
+}
+.social-links a {
+  margin-right: 0.8rem;
+}
+.covers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 2rem 0;
+}
+.cover-card {
+  text-decoration: none;
+  color: inherit;
+}
+.cover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cover-card .cover-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.2rem;
+}
+.cover-card .cover-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+@media (max-width: 600px) {
+  .side-by-side {
+    flex-direction: column;
+  }
+}
